@@ -102,3 +102,14 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         }
     });
 });
+
+/* Chat Notification Logic */
+const chatNotification = document.querySelector('.chat-notification');
+const closeChatBtn = document.querySelector('.close-chat');
+
+if (closeChatBtn) {
+  closeChatBtn.addEventListener('click', () => {
+    chatNotification.style.display = 'none';
+  });
+}
+
