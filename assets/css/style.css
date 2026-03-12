@@ -407,6 +407,61 @@ img {
 }
 
 /* =========================================
+   6a. Why Us Section
+   ========================================= */
+.why-us-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}
+
+.why-us-item {
+  border: 1px dotted #ccc;
+  padding: 20px 15px;
+  text-align: center;
+  transition: var(--transition);
+  background: var(--white);
+  height: 100%;
+}
+
+.why-us-item:hover {
+  background-color: var(--off-white);
+  border-style: solid;
+  border-color: var(--secondary-color);
+}
+
+.why-us-icon {
+  font-size: 40px;
+  color: var(--primary-color);
+  margin-bottom: 15px;
+}
+
+.why-us-item h3 {
+  font-size: 16px;
+  margin-bottom: 8px;
+  color: var(--primary-color);
+}
+
+.why-us-item p {
+  font-size: 14px;
+  color: var(--text-light);
+  margin-bottom: 0;
+}
+
+/* Responsiveness for Why Us Section */
+@media (max-width: 1024px) {
+  .why-us-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .why-us-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* =========================================
    7. Services Section
    ========================================= */
 .services-grid {

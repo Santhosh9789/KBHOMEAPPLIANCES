@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://tooquik.co.in/kbhomeappliances/sitemap.xml
