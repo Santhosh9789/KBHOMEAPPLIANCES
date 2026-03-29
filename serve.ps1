@@ -1,4 +1,4 @@
-$port = 2026
+$port = 2020
 $root = "f:\vs code project\KBHOMEAPPLIANCES"
 $url = "http://localhost:$port/"
 $listener = New-Object System.Net.HttpListener
